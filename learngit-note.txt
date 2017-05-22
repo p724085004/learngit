@@ -1,0 +1,23 @@
+git init ====> 将所在目录变为git可以管理的目录
+pwd ====> 显示当前目录
+mkdir ====> 创建目录
+git add <file_name>====> 将修改内容或者新文件添加到本地缓存区
+	git add -A   // 添加所有改动
+
+	git add *     // 添加新建文件和修改，但是不包括删除	
+
+	git add .    // 添加新建文件和修改，但是不包括删除
+
+	git add -u   // 添加修改和删除，但是不包括新建文件
+git commit -m "..."====> 将本地缓冲区的内容提交到本地仓库
+git status ====> 查看仓库状态
+git diff ====> 查看改动了哪里 
+git reset ====> commit前撤销add
+	git reset <file> // 撤销提交单独文件
+git checkout -- <file_name> ====> 将文件工作区修改撤销
+git log ====> 查看版本历史记录
+git reset --hard HEAD^ ====> 版本回退到上一个（HEAD表示当前版本 ^表上一个）
+git reflog ====> 查看历史命令（可以到未来）
+git diff HEAD -- <file_name> ====>查看工作区和缓存区的不同
+git rm ====> 在仓库中删除文件
+git push (-u) origion master ====> 将分支推送到远程库（-u 把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令）
