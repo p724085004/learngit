@@ -21,3 +21,10 @@ git reflog ====> 查看历史命令（可以到未来）
 git diff HEAD -- <file_name> ====>查看工作区和缓存区的不同
 git rm ====> 在仓库中删除文件
 git push (-u) origion master ====> 将分支推送到远程库（-u 把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令）
+git clone git@github.com:p724085004/22.git ====> 从远程库克隆文件夹
+git checkout -b dev ====> -b表示创建并切换分支dev
+	相当于git branch dev + git checkout dev
+git branch ====> 查看全部分支（当前分支有*）
+git checkout master ====> 切换分支
+git merge <branch_name> ====>将分支合并到当前分支（一般切换到master时使用）
+git branch -d dev ====> 删除分支
